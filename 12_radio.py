@@ -23,7 +23,7 @@ Radiobutton(root, text="Option 2", variable=r, value=2, command=lambda: clicked(
 myLabel = Label(root, text=r.get())
 myLabel.pack()
 
-myButton = Button(root, text="Buuton Click", command=lambda: clicked (r.get()))
+myButton = Button(root, text="Button Click", command=lambda: clicked (r.get()))
 myButton.pack()
 
 root.mainloop()
