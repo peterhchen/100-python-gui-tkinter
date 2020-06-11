@@ -1,4 +1,4 @@
-# https://www.youtube.com/watch?v=zg4c92pNFeo&list=PLCC34OHNcOtoC6GglhF3ncJ5rLwQrLGnV&index=9
+# https://www.youtube.com/watch?v=MGu7zKi5azQ&list=PLCC34OHNcOtoC6GglhF3ncJ5rLwQrLGnV&index=10
 
 from tkinter import *
 # > pip install pillow
