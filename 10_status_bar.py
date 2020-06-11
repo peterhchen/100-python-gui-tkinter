@@ -24,7 +24,7 @@ def forward(image_number):
     global my_label
     global button_forward
     global button_back
-    global status
+    #global status
     my_label.grid_forget()
     print('forward => image_number:', image_number)
     my_label = Label (image=image_list[image_number-1])
@@ -44,7 +44,7 @@ def back(image_number):
     global my_label
     global button_forward
     global button_back
-    global status
+    #global status
     my_label.grid_forget()
     print('back => image_number:', image_number)
     my_label = Label (image=image_list[image_number-1])
