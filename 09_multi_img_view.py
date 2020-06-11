@@ -8,13 +8,13 @@ root = Tk()
 root.title ("Image Viewer and Exit Button")
 root.iconbitmap('./pythonlogo_12x12.bmp')
 
+my_img0 = ImageTk.PhotoImage (Image.open ('./images/dog0.jpg'))
 my_img1 = ImageTk.PhotoImage (Image.open ('./images/dog1.jpg'))
 my_img2 = ImageTk.PhotoImage (Image.open ('./images/dog2.jpg'))
 my_img3 = ImageTk.PhotoImage (Image.open ('./images/dog3.jpg'))
 my_img4 = ImageTk.PhotoImage (Image.open ('./images/dog4.jpg'))
-my_img5 = ImageTk.PhotoImage (Image.open ('./images/dog5.jpg'))
-image_list = [my_img1, my_img2, my_img3, my_img4, my_img5]
-my_label = Label (image=my_img1)        # default is image[0] = dog1.jpg
+image_list = [my_img0, my_img1, my_img2, my_img3, my_img4]
+my_label = Label (image=my_img0)        # default is image[0] = dog1.jpg
 my_label.grid(row=0, column=0, columnspan=3)    # Put on the screen
 
 def forward(image_number):
@@ -51,7 +51,7 @@ def back(image_number):
 
 button_back = Button(root, text="<<", command=back, state=DISABLED)
 button_quit = Button (root, text="Exit Program", command=root.quit)
-button_forward = Button(root, text=">>", command=lambda: forward(2))
+button_forward = Button(root, text=">>", command=lambda: forward(1))
 button_back.grid(row=1, column=0)
 button_quit.grid(row=1, column=1)
 button_forward.grid(row=1, column=2)
